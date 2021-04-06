@@ -1,0 +1,23 @@
+.adress-box {
+  margin-top: 20px;
+  font-style: normal;
+  &__link {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--transition-hover-focus);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
+  &__addres {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}

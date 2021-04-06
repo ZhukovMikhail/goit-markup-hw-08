@@ -1,0 +1,25 @@
+.product-card {
+  display: block;
+  &__label {
+    padding: 20px 24px;
+    border-style: solid;
+    border-color: #eeeeee;
+    border-width: 1px;
+    border-top: none;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    font-family: var(--main-font);
+    color: #212121;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 4px;
+  }
+}

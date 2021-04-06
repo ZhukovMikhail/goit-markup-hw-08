@@ -1,0 +1,21 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__contacts {
+    margin-left: 70px;
+  }
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__social-title {
+    font-style: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
