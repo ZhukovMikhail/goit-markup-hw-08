@@ -1,49 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="http://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="http://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"> -->
-    <link rel="stylesheet" href="./CSS/main.min.css">
+    <link rel="stylesheet" href="./CSS/main.min.css" />
     <title>WebStudiо</title>
-</head>
-<body>
-<header class="header section">
-    <div class="container">
-    <nav class="navigation">
-        <a class="logo logo__header link" lang="en" href="./index.html">Web<span class="logo__light-theme">Studio</span></a>
-        <ul class="navigation__list list">
-            <li class="navigation__item"><a class="navigation__link link current" href="./index.html">Студия</a></li>
-            <li class="navigation__item"><a class="navigation__link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="navigation__item"><a class="navigation__link link" href="#contacts">Контакты</a></li>
+  </head>
+  <body>
+    <header class="header section">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo logo__header link" lang="en" href="./index.html"
+            >Web<span class="logo__light-theme">Studio</span></a
+          >
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link current" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="cont-link link" href="mailto:info@devstudio.com">
+          <svg class="cont-link__icon" width="16" height="12">
+            <use
+              class="icon-color"
+              href="./images/sprite.svg#icon-envelope"
+            ></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="cont-link link" href="tel:+380961111111">
+          <svg class="cont-link__icon" width="10" height="16">
+            <use href="./images/sprite.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+        <button class="burger-btn" type="button" data-menu-button>
+          <svg class="burger-icon">
+            <use href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile-Menu -->
+      <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="">Контакты</a>
+          </li>
         </ul>
-    </nav>
-    <a class="cont-link link" href="mailto:info@devstudio.com">
-        <svg class="cont-link__icon" width="16" height="12">
-            <use class="icon-color" href="./images/sprite.svg#icon-envelope" ></use>
-        </svg>
-        info@devstudio.com</a>
-    <a class="cont-link link" href="tel:+380961111111" >
-        <svg class="cont-link__icon" width="10" height="16">
-            <use href="./images/sprite.svg#icon-smartphone" ></use>
-        </svg>
-        +38 096 111 11 11</a>
-</div>
-</header>
-    <main>
-        <!--hero-->
-        <section class="hero section">
+        <a class="cont-link link" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+        <a class="cont-link link" href="tel:+380961111111">
+          +38 096 111 11 11
+        </a>
+        <ul class="social list">
+          <li class="solcial-links__item">
+            <a href="#" class="sosial__link link">Instagram</a>
+          </li>
+          <li class="solcial-links__item">
+            <a href="#" class="sosial__link link">Twitter</a>
+          </li>
+          <li class="solcial-links__item">
+            <a href="#" class="sosial__link link">Facebook</a>
+          </li>
+          <li class="solcial-links__item">
+            <a href="#" class="sosial__link link">LinkedIn</a>
+          </li>
+        </ul>
+        <button class="close-btn" type="button" data-menu-close>
+          <svg class="close-btn__icon">
+            <use href="./images/sprite.svg#icon-close-black-18dp-1"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile-Menu End -->
+    </header>
+    <!-- <main> -->
+    <!--hero-->
+    <!-- <section class="hero section">
             <div class="container">            
                 <h1 class="hero__slogan">Эффективные решения для вашего бизнеса</h1>
             <button class="button hero__button " type="button" data-modal-open>Заказать услугу</button>
         </div>
-        </section>
-        <!--advanteges-->
-        <section class="advantages section">
+        </section> -->
+    <!--advanteges-->
+    <!-- <section class="advantages section">
             <ul class="container list">
                 <li class="advantages__item">
                     <div class="advantages__icons">
@@ -82,9 +147,9 @@
                     <p class="advantages__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-        </section>
-        <!--what do we do-->
-        <Section class="what-we-do section">
+        </section> -->
+    <!--what do we do-->
+    <!-- <Section class="what-we-do section">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="what-we-do__list list">
@@ -105,10 +170,10 @@
             </li>
         </ul>
         </div>
-        </Section>
-        
-            <!--Our team-->
-            <section class="team section">
+        </Section> -->
+
+    <!--Our team-->
+    <!-- <section class="team section">
                 <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__block list">
@@ -218,9 +283,9 @@
                     </li>
                 </ul>
                 </div>
-            </section>
-<!--Our clients-->
-            <section class="section">
+            </section> -->
+    <!--Our clients-->
+    <!-- <section class="section">
                 <div class="container">
                     <h2 class="section-title">Постоянные клиенты</h2>
                     <ul class="clients list">
@@ -275,11 +340,11 @@
                         
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-        </main>
+    <!-- </main> -->
     <!--Footer-->
-<footer class="footer" id="contacts">
+    <!-- <footer class="footer" id="contacts">
     <div class="container footer__container">
         <div>
             <a class="logo link" lang="en" href="./index.html">Web<span class="logo__dark-theme">Studio</span></a>
@@ -329,11 +394,11 @@
             </form>
         </div>
     </div>
-</footer>
-<!-- Fotter END -->
+</footer> -->
+    <!-- Fotter END -->
 
-<!-- Modal Window -->
-<div class="backdrop is-hidden" data-modal>
+    <!-- Modal Window -->
+    <!-- <div class="backdrop is-hidden" data-modal>
     <form class="modal" method="GET" autocomplete="off">
         <button type="button" class="close-btn" data-modal-close>
             <svg class="close-btn__icon">
@@ -376,10 +441,11 @@
         </label>
     <button type="submit" class="button modal__button">Отправить</button>
     </form>
-    </div>
+    </div> -->
 
-<script src="./js/modal.js"></script>
-<!-- Modal Window END-->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 
-</body>
+    <!-- Modal Window END-->
+  </body>
 </html>

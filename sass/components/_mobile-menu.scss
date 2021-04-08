@@ -1,0 +1,19 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  max-width: 480px;
+
+  padding: 48px 40px;
+  background-color: wheat;
+  & .cont-link {
+    display: flex;
+  }
+  transform: translateY(-100%) translateX(-50%);
+  transition: transform 250ms linear;
+}
+.is-open {
+  transform: translateY(0) translateX(-50%);
+}
