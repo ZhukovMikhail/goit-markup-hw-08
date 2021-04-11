@@ -20,6 +20,10 @@
   .container {
     width: 768px;
   }
+  .burger-btn {
+    display: none;
+  }
+
 }
 @media screen and (min-width: 1200px) {
   .container {
