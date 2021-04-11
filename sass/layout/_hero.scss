@@ -1,33 +1,107 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+  position: relative;
   background: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg_image/img.jpg);
+    url(../images/tel/hero/1x/Header-img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  &__slogan {
-    width: 696px;
-    height: 120px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+  background-size: auto;
+  display: block;
+  max-width: 480px;
+  height: 400px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  &__slogan-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 0.06em;
+
     text-transform: uppercase;
     color: #ffffff;
   }
   &__button {
     margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    align-self: center;
+  }
+  &__slogan-text {
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__slogan-text {
+    font-size: 5.2vw;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tel/hero/2x/Header-img@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/hero/1x/Header-img.jpg);
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tablet/hero/2x/Header-img@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/comp/hero/1x/Img.jpg);
+    background-size: auto;
+    &__slogan-text {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/comp/hero/2x/Img@2x.jpg);
+    }
   }
 }
