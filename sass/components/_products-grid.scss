@@ -4,7 +4,7 @@
   margin-left: calc(-1 * var(--project-card-gap));
   margin-top: calc(-1 * var(--project-card-gap));
   &__item {
-    flex-basis: calc(100% / 3 - var(--project-card-gap));
+    flex-basis: calc(100% / (--qty-project-card-colums) - var(--project-card-gap));
     margin-left: var(--project-card-gap);
     margin-top: var(--project-card-gap);
     transition: var(--transition-hover-focus);
