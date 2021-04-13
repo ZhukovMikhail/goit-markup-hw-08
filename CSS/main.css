@@ -430,6 +430,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  z-index: 10000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -493,6 +494,7 @@ body {
 
 .mobile-menu-social {
   margin-top: 72px;
+  max-width: 50vw;
   display: flex;
   justify-content: space-between;
 }
@@ -514,7 +516,8 @@ body {
 
 .mobile-menu-social__item:not(:last-child)::after {
   content: '';
-  margin-left: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 1px;
   height: 22px;
   border: none;
@@ -630,11 +633,8 @@ body {
   transform: translatey(0);
 }
 
-.product-card {
-  display: block;
-}
-
 .product-card__label {
+  flex-grow: 1;
   padding: 20px 24px;
   border-style: solid;
   border-color: #eeeeee;
@@ -659,22 +659,68 @@ body {
   margin-top: 4px;
 }
 
-.products-grid {
+@media screen and (max-width: 479px) {
+  .overlay__text {
+    font-size: 4vw;
+  }
+  .product-card__title {
+    font-size: 3.9vw;
+  }
+  .product-card__desc {
+    font-size: 3.4vw;
+  }
+  .portfolio__buttons-link {
+    font-size: 3.4vw;
+  }
+}
+
+.products-grid__link {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--project-card-gap));
-  margin-top: calc(-1 * var(--project-card-gap));
+  flex-direction: column;
+  height: 100%;
 }
 
 .products-grid__item {
-  flex-basis: calc(100% / (--qty-project-card-colums) - var(--project-card-gap));
-  margin-left: var(--project-card-gap);
-  margin-top: var(--project-card-gap);
+  width: 100%;
   transition: var(--transition-hover-focus);
 }
 
 .products-grid__item:hover, .products-grid__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.product-card {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__buttons-list {
+    justify-content: left;
+  }
+  .products-grid__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .products-grid__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc( 100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-grid__item {
+    width: 100%;
+    flex-basis: calc( 100% / 3 - 30px);
+  }
 }
 
 .social {
@@ -730,6 +776,10 @@ body {
 
 .social__icon--footer {
   fill: #ffffff;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .adress-box {
@@ -1115,16 +1165,17 @@ body {
   .tel-icon--size {
     width: 10px;
     height: 16px;
+    margin-top: 1px;
   }
 }
 
 .hero {
-  position: relative;
+  display: flex;
+  align-items: center;
   background: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tel/hero/1x/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  display: block;
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
@@ -1132,12 +1183,11 @@ body {
 }
 
 .hero__slogan-container {
-  position: absolute;
+  max-width: 360px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-self: center;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -1193,6 +1243,9 @@ body {
   .hero__slogan-text {
     font-size: 44px;
     line-height: 1.36;
+  }
+  .hero__slogan-container {
+    max-width: 696px;
   }
 }
 
@@ -1459,6 +1512,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__contacts {
+    width: 230px;
+  }
   .footer__social {
     margin-left: 70px;
   }
@@ -1469,22 +1525,25 @@ body {
 }
 
 .portfolio .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio__buttons-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.portfolio__buttons-item:not(:last-child) {
+.portfolio__buttons-item {
   margin-right: 8px;
 }
 
+.portfolio__buttons-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .portfolio__buttons-link {
-  height: 38px;
   background: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
@@ -1503,5 +1562,19 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__buttons-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,10 +18,10 @@
             <a class="logo logo__header link" lang="en" href="./index.html">Web<span class="logo__light-theme">Studio</span></a>
             <ul class="navigation__list list">
               <li class="navigation__item">
-                <a class="navigation__link link current" href="./index.html">Студия</a>
+                <a class="navigation__link link " href="./index.html">Студия</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
+                <a class="navigation__link link current" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link link" href="#contacts">Контакты</a>
@@ -57,13 +57,13 @@
         <div class="mobile-menu" data-menu>
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="">Студия</a>
+              <a class="mobile-menu__link link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="">Портфолио</a>
+              <a class="mobile-menu__link link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="">Контакты</a>
+              <a class="mobile-menu__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
           <ul class="mobile-menu__cont-link list">
@@ -123,10 +123,16 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                     <div class="overlay">
-                    <img class="product-card" width="370" height="294" src="./images/portfolio/img.jpg" alt="постер вебсайта">
-                    <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img.jpg 1x, ./images/comp/portfolio/2x/img@2x.jpg 2x," type="image/jpg">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img.jpg 1x, ./images/tablet/portfolio/2x/img@2x.jpg 2x" type="image/jpeg">
+                        <source srcset="./images/tel/portfolio/1x/img.jpg 1x, ./images/tel/portfolio/2x/img@2x.jpg 2x" type="image/jpeg">
+                      
+                      <img class="product-card" src="./images/tel/portfolio/1x/img.jpg" alt="постер вебсайта">
+                    </picture>
+                      <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.</p>
+                    </div>
                     <div class="product-card__label">
                     <h3 class="product-card__title">Технокряк</h3>
                     <p class="product-card__desc">Веб-сайт</p>
@@ -136,8 +142,13 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                     <div class="overlay">
-                        <img class="product-card" width="370" height="294" src="./images/portfolio/img-1.jpg" alt="постер матча">
-                            <p class="overlay__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quam dolorem aliquam provident, in distinctio, neque ut possimus ipsum quis suscipit accusantium. Tempore natus numquam eaque quod sequi laudantium earum.</p>
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-1.jpg 1x, ./images/comp/portfolio/2x/img@2x-1.jpg 2x" type="image/jpg">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-1.jpg 1x, ./images/tablet/portfolio/2x/img@2x-1.jpg 2x" type="image/jpeg">
+                        <source srcset="./images/tel/portfolio/1x/img-1.jpg 1x, ./images/tel/portfolio/2x/img@2x-1.jpg 2x" type="image/jpeg">
+                        <img class="product-card" src="./images/tel/portfolio/1x/img-1.jpg" alt="постер матча">
+                      </picture>
+                      <p class="overlay__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quam dolorem aliquam provident, in distinctio, neque ut possimus ipsum quis suscipit accusantium. Tempore natus numquam eaque quod sequi laudantium earum.</p>
                     </div>
                     <div class="product-card__label">
                     <h3 class="product-card__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
@@ -148,7 +159,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-2.jpg" alt="постер ресторана">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-2.jpg 1x, ./images/comp/portfolio/2x/img@2x-2.jpg 2x" type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-2.jpg 1x, ./images/tablet/portfolio/2x/img@2x-2.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-2.jpg 1x, ./images/tel/portfolio/2x/img@2x-2.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-2.jpg" alt="постер ресторана">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam magni neque. Delectus eveniet recusandae minus exercitationem eligendi, sequi explicabo aspernatur sint perferendis optio commodi illum reiciendis quisquam, perspiciatis laboriosam.</p>
                         </div>
                     <div class="product-card__label">
@@ -160,7 +176,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-3.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-3.jpg 1x, ./images/comp/portfolio/2x/img@2x-3.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-3.jpg 1x, ./images/tablet/portfolio/2x/img@2x-3.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-3.jpg 1x, ./images/tel/portfolio/2x/img@2x-3.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-3.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores soluta eum possimus doloribus quae amet in maxime nobis nemo, perferendis labore exercitationem ut odio aspernatur. Autem, quis tenetur. Quos?</p>
                         </div>
                     <div class="product-card__label">
@@ -172,7 +193,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-4.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-4.jpg 1x, ./images/comp/portfolio/2x/img@2x-4.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-4.jpg 1x, ./images/tablet/portfolio/2x/img@2x-4.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-4.jpg 1x, ./images/tel/portfolio/2x/img@2x-4.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-4.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nemo sed optio ipsum totam exercitationem saepe maxime enim officiis, ea unde sit vero! Repudiandae, dolores iure dicta minima perspiciatis nulla.</p>
                         </div>
                     <div class="product-card__label">
@@ -184,7 +210,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-5.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-5.jpg 1x, ./images/comp/portfolio/2x/img@2x-5.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-5.jpg 1x, ./images/tablet/portfolio/2x/img@2x-5.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-5.jpg 1x, ./images/tel/portfolio/2x/img@2x-5.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-5.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore doloribus, autem ducimus ipsa nemo placeat, molestias dolorum id veniam a provident illo veritatis optio iste repellendus nam fuga sed totam.</p>
                         </div>
                     <div class="product-card__label">
@@ -196,7 +227,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-6.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-6.jpg 1x, ./images/comp/portfolio/2x/img@2x-6.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-6.jpg 1x, ./images/tablet/portfolio/2x/img@2x-6.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-6.jpg 1x, ./images/tel/portfolio/2x/img@2x-6.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-6.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti obcaecati, voluptates nulla cum nostrum qui veritatis distinctio ad suscipit amet. Eos temporibus, excepturi similique ratione voluptate ex. Sequi, blanditiis eligendi.</p>
                         </div>
                     <div class="product-card__label">
@@ -208,7 +244,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-7.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-7.jpg 1x, ./images/comp/portfolio/2x/img@2x-7.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-7.jpg 1x, ./images/tablet/portfolio/2x/img@2x-7.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-7.jpg 1x, ./images/tel/portfolio/2x/img@2x-7.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-7.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, similique, quia et vel, impedit laboriosam voluptatum officia vitae saepe debitis veritatis ab culpa autem ipsum. Maiores tempore necessitatibus sint tempora?</p>
                         </div>
                     <div class="product-card__label">
@@ -220,7 +261,12 @@
                 <li class="products-grid__item">
                     <a href="#" class="products-grid__link link">
                         <div class="overlay">
-                            <img class="product-card" width="370" height="294" src="./images/portfolio/img-8.jpg" alt="постер проекта">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/comp/portfolio/1x/img-8.jpg 1x, ./images/comp/portfolio/2x/img@2x-8.jpg 2x," type="image/jpg">
+                            <source media="(min-width: 768px)" srcset="./images/tablet/portfolio/1x/img-8.jpg 1x, ./images/tablet/portfolio/2x/img@2x-8.jpg 2x" type="image/jpeg">
+                            <source srcset="./images/tel/portfolio/1x/img-8.jpg 1x, ./images/tel/portfolio/2x/img@2x-8.jpg 2x" type="image/jpeg">
+                            <img class="product-card" src="./images/tel/portfolio/1x/img-8.jpg" alt="постер проекта">
+                          </picture>
                                 <p class="overlay__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae repellendus vero accusantium aspernatur iure, saepe nesciunt ut, consequuntur laborum eos quas! Error ipsa eos iusto ducimus sint deserunt! Quis, repellendus!</p>
                         </div>
                     <div class="product-card__label">
@@ -286,5 +332,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

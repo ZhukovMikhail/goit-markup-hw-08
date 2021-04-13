@@ -8,6 +8,7 @@
   &__item--footer:not(:last-child) {
     margin-right: 10px;
   }
+  
   &__link {
     width: 44px;
     height: 44px;
@@ -46,4 +47,7 @@
   &__icon--footer {
     fill: #ffffff;
   }
+}
+.social__item:not(:first-child) {
+  margin-left: 10px;
 }
