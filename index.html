@@ -178,28 +178,34 @@
     </section>
 
     <!--what do we do-->
-    <!-- <Section class="what-we-do section">
+    <Section class="what-we-do section">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="what-we-do__list list">
             <li class="what-we-do__item">
                 <p class="what-we-do__text">Десктопные приложения</p>
-                <img class="what-we-do__img" width="370" height="294" src="./images/what_do_we_do/img.jpg" alt="разработка для ПК">
-            
+                <Picture>
+                  <source media="(min-width: 1200px)" srcset="./images/comp/about/1x/img.jpg 1x, ./images/comp/about/2x/img@2x.jpg 2x" type="image/jpeg">
+                    <img class="what-we-do__img" src="./images/what_do_we_do/img.jpg" alt="разработка для ПК">
+                </Picture>
             </li>
             <li class="what-we-do__item">
                 <p class="what-we-do__text">Мобильные приложения</p>
-                <img class="what-we-do__img" width="370" height="294" src="./images/what_do_we_do/img-1.jpg" alt="разработка для смартфонов">
-            
+                <Picture>
+                  <source media="(min-width: 1200px)" srcset="./images/comp/about/1x/img-1.jpg 1x, ./images/comp/about/2x/img@2x-1.jpg 2x" type="image/jpeg">
+                    <img class="what-we-do__img" src="./images/what_do_we_do/img-1.jpg" alt="разработка для смартфонов">
+              </Picture>
             </li>
             <li class="what-we-do__item">
                 <p class="what-we-do__text">Дизайнерские решения</p>
-                <img class="what-we-do__img" width="370" height="294" src="./images/what_do_we_do/img-2.jpg" alt="разработка для планшетов">
-            
+                <Picture>
+                  <source media="(min-width: 1200px)" srcset="./images/comp/about/1x/img-2.jpg 1x, ./images/comp/about/2x/img@2x-2.jpg 2x " type="image/jpeg">
+                    <img class="what-we-do__img" src="./images/what_do_we_do/img-2.jpg" alt="разработка для планшетов">
+            </Picture>
             </li>
         </ul>
         </div>
-        </Section> -->
+        </Section>
 
     <!--Our team-->
 
@@ -209,18 +215,13 @@
         <ul class="team__list list">
           <li class="team__item">
             <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./images/comp/team/1x/img.jpg 1x, ./images/comp/team/2x/img@2x.jpg 2x" 
+              <source media="(min-width: 1200px)" srcset="./images/comp/team/1x/img.jpg 1x, ./images/comp/team/2x/img@2x.jpg 2x" 
                 type="image/jpeg"/>
-              <source media="(min-width: 768px)" 
-                srcset="./images/tablet/team/1x/img.jpg 1x, ./images/tablet/team/1x/img@2x.jpg 2x" 
+              <source media="(min-width: 768px)" srcset="./images/tablet/team/1x/img.jpg 1x, ./images/tablet/team/2x/img@2x.jpg 2x" 
                 type="image/jpeg">
               <source srcset="./images/tel/team/1x/img.jpg 1x, ./images/tel/team/2x/img@2x.jpg 2x" 
-              type="image/jpeg">
-              <img
-                class="team__photo"
-                src="./images/tel/team/1x/img.jpg"
-                alt="фото Игорь Демьяненко"/>
+                type="image/jpeg">
+              <img class="team__photo" src="./images/tel/team/1x/img.jpg" alt="фото Игорь Демьяненко"/>
             </picture>
             <div class="team__label">
               <h4 class="team__title">Игорь Демьяненко</h4>
@@ -251,16 +252,12 @@
           </li>
           <li class="team__item">
           <picture>
-            <source media="(min-width: 1200px)"
-            srcset="./images/comp/team/1x/img-1.jpg 1x, ../images/comp/team/2x/img-1@2x.jpg 2x" 
+          <source media="(min-width: 1200px)" srcset="./images/comp/team/1x/img-1.jpg 1x, ./images/comp/team/2x/img@2x-1.jpg 2x" 
             type="image/jpeg"/>
-          <source media="(min-width: 768px)" 
-            srcset="./images/tablet/team/1x/img-1.jpg 1x, ./images/tablet/team/1x/img-1@2x.jpg 2x" 
+          <source media="(min-width: 768px)" srcset="./images/tablet/team/1x/img-1.jpg 1x, ./images/tablet/team/2x/img@2x-1.jpg 2x" 
             type="image/jpeg">
-          <source srcset="./images/tel/team/1x/img-1.jpg 1x, ./images/tel/team/2x/img-1@2x.jpg 2x" 
-          type="image/jpeg">
-            <img
-              class="team__photo"
+          <source srcset="./images/tel/team/1x/img-1.jpg 1x, ./images/tel/team/2x/img@2x-1.jpg 2x" type="image/jpeg">
+            <img class="team__photo"
               src="./images/tel/team/1x/img-1.jpg"
               alt="фото Ольга Репина"/>
           </picture>
@@ -293,18 +290,13 @@
           </li>
           <li class="team__item">
             <picture>
-            <source media="(min-width: 1200px)"
-            srcset="./images/comp/team/1x/img-2.jpg 1x, ../images/comp/team/2x/img-2@2x.jpg 2x" 
+            <source media="(min-width: 1200px)" srcset="./images/comp/team/1x/img-2.jpg 1x, ./images/comp/team/2x/img@2x-2.jpg 2x" 
             type="image/jpeg"/>
-          <source media="(min-width: 768px)" 
-            srcset="./images/tablet/team/1x/img-2.jpg 1x, ./images/tablet/team/1x/img-2@2x.jpg 2x" 
+          <source media="(min-width: 768px)" srcset="./images/tablet/team/1x/img-2.jpg 1x, ./images/tablet/team/2x/img@2x-2.jpg 2x" 
             type="image/jpeg">
-          <source srcset="./images/tel/team/1x/img-2.jpg 1x, ./images/tel/team/2x/img-2@2x.jpg 2x" 
+          <source srcset="./images/tel/team/1x/img-2.jpg 1x, ./images/tel/team/2x/img@2x-2.jpg 2x" 
           type="image/jpeg">
-            <img
-              class="team__photo"
-              src="./images/tel/team/1x/img-2.jpg"
-              alt="фото Николай Тарасов"/>
+            <img class="team__photo" src="./images/tel/team/1x/img-2.jpg" alt="фото Николай Тарасов"/>
             </picture>
             <div class="team__label">
               <h4 class="team__title">Николай Тарасов</h4>
@@ -341,18 +333,13 @@
           </li>
           <li class="team__item">
             <picture>
-            <source media="(min-width: 1200px)"
-            srcset="./images/comp/team/1x/img-3.jpg 1x, ../images/comp/team/2x/img-3@2x.jpg 2x" 
+            <source media="(min-width: 1200px)" srcset="./images/comp/team/1x/img-3.jpg 1x, ./images/comp/team/2x/img@2x-3.jpg 2x" 
             type="image/jpeg"/>
-          <source media="(min-width: 768px)" 
-            srcset="./images/tablet/team/1x/img-3.jpg 1x, ./images/tablet/team/1x/img-3@2x.jpg 2x" 
+          <source media="(min-width: 768px)" srcset="./images/tablet/team/1x/img-3.jpg 1x, ./images/tablet/team/2x/img@2x-3.jpg 2x" 
             type="image/jpeg">
-          <source srcset="./images/tel/team/1x/img-3.jpg 1x, ./images/tel/team/2x/img-3@2x.jpg 2x" 
+          <source srcset="./images/tel/team/1x/img-3.jpg 1x, ./images/tel/team/2x/img@2x-3.jpg 2x" 
           type="image/jpeg">
-            <img
-              class="team__photo"
-              src="./images/tel/team/1x/img-3.jpg"
-              alt="фото Михаил Ермаков"/>
+            <img class="team__photo" src="./images/tel/team/1x/img-3.jpg" alt="фото Михаил Ермаков"/>
             </picture>
             <div class="team__label">
               <h4 class="team__title">Михаил Ермаков</h4>
@@ -447,10 +434,12 @@
             </section>
 
     <!-- </main> -->
+    
     <!--Footer-->
-    <!-- <footer class="footer" id="contacts">
+    <footer class="footer" id="contacts">
     <div class="container footer__container">
-        <div>
+      <div class="footer-wraper">
+        <div class="footer__contacts">
             <a class="logo link" lang="en" href="./index.html">Web<span class="logo__dark-theme">Studio</span></a>
                 <address class="adress-box">
                     <ul class="list">
@@ -461,7 +450,7 @@
                     </ul>
                 </address>
         </div>
-        <div class="footer__contacts">
+        <div class="footer__social">
             <p class="footer__social-title">присоединяйтесь</p>
                 <ul class="social social--footer">
                     <li class="social__item social__item--footer list"><a class="social__link social__link--footer list" href="#">
@@ -486,6 +475,7 @@
                     </li>
                 </ul>
         </div>
+      </div>
         <div class="submit-box">
             <p class="submit-box__tittle" >Подпишитесь на рассылку</p>
             <form class="submit-box__form" name="sign-up-form" autocomplete="off">
@@ -498,7 +488,7 @@
             </form>
         </div>
     </div>
-</footer> -->
+</footer>
     <!-- Fotter END -->
 
     <!-- Modal Window -->
