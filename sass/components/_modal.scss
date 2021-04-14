@@ -30,6 +30,21 @@
   }
 }
 @media screen and (max-width: 479px) {
+  .modal-checkbox__label {
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+
+@media screen and (max-width: 479px) {
 .modal__text {
   font-size: 4.2vw;
 }
