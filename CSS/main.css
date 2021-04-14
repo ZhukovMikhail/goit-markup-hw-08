@@ -1225,7 +1225,6 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tel/hero/1x/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-position: 50% 50%;
@@ -1268,7 +1267,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/1x/Header-img.jpg);
     background-size: cover;
