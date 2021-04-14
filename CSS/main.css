@@ -904,34 +904,6 @@ body {
   align-self: center;
 }
 
-@media screen and (max-width: 479px) {
-  .modal-checkbox__label {
-    flex-wrap: wrap;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-checkbox__label {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .modal__text {
-    font-size: 4.2vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    position: fixed;
-    max-width: 528px;
-    max-height: 581px;
-  }
-}
-
 .close-btn {
   position: absolute;
   display: flex;
@@ -1018,7 +990,7 @@ body {
 
 .modal-checkbox__link {
   font-family: var(--main-font);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -1029,7 +1001,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: var(--main-font);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1072,6 +1044,34 @@ body {
 
 .textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-checkbox__label {
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal__text {
+    font-size: 4.2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: fixed;
+    max-width: 528px;
+    max-height: 581px;
+  }
+  .modal-checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-checkbox__link {
+    font-size: 14px;
+  }
 }
 
 .header {
@@ -1255,7 +1255,7 @@ body {
   .hero {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/1x/Header-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/1x/Header-img.jpg);
     background-size: cover;
   }
 }
@@ -1263,7 +1263,7 @@ body {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/2x/Header-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/2x/Header-img@2x.jpg);
   }
 }
 

@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/hero/1x/Header-img.jpg);
+      url(../images/tablet/hero/1x/Header-img.jpg);
     background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
@@ -72,7 +72,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tablet/hero/2x/Header-img@2x.jpg);
+        url(../images/tablet/hero/2x/Header-img@2x.jpg);
     }
   }
 }
