@@ -399,6 +399,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: bold;
@@ -867,12 +873,14 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 450px;
+  max-height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -918,8 +926,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    position: fixed;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1200,7 +1209,7 @@ body {
   background: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tel/hero/1x/Header-img.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
@@ -1246,7 +1255,7 @@ body {
   .hero {
     max-width: 768px;
     height: 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/1x/Header-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/1x/Header-img.jpg);
     background-size: cover;
   }
 }
@@ -1254,7 +1263,7 @@ body {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/2x/Header-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/2x/Header-img@2x.jpg);
   }
 }
 
@@ -1263,7 +1272,7 @@ body {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp/hero/1x/Img.jpg);
-    background-size: auto;
+    background-size: cover;
   }
   .hero__slogan-text {
     font-size: 44px;
@@ -1314,6 +1323,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .advantages__title, .advantages__text {
+    text-align: start;
+  }
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -1324,9 +1336,6 @@ body {
     flex-basis: calc(100%/2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-  }
-  .advantages__text {
-    text-align: start;
   }
 }
 

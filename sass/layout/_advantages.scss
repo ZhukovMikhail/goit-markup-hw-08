@@ -30,8 +30,13 @@
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width:768px) {
   .advantages {
+    &__title, &__text {
+      text-align: start;
+    }
+  
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -45,10 +50,8 @@
       margin-left: 30px;
       }
   }
-  .advantages__text {
-    text-align: start;
-  }
 }
+ 
  
 
 @media screen and  (min-width:1200px) {
